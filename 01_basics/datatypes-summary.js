@@ -33,3 +33,28 @@ const myfunction = function()
 }
 
 console.log(typeof bigNumber);
+
+
+
+// ******* Memory *********
+// stack(Primitive - copy value)  , Heap(Non-Primitive - originalvalue) 
+
+let myYoutubename = "diptiutalecom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email : "user@google.com" ,
+    upi : "user@sbi"
+}
+
+let userTwo = userOne
+
+userTwo.email = "dipti@google.com"
+
+console.log(userOne.email);
+onsole.log(userTwo.email);
